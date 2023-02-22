@@ -9,8 +9,10 @@
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_above="@+id/inputsection"
         android:padding="10dp"
-        android:id="@+id/recycler_view"/>
+        android:id="@+id/recycler_view"
+        tools:listitem="@layout/chat_item"/>
 
     <TextView
         android:layout_width="match_parent"
@@ -22,6 +24,7 @@
         android:textSize="25sp" />
 
     <RelativeLayout
+        android:id="@+id/inputsection"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
